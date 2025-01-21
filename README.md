@@ -153,7 +153,33 @@ The project introduces user challenges for blockchain mining, making it more int
 |                           | **Security Threats**      | Robust measures must be maintained to protect user assets and data.                        |
 
 ---
+| **Aspect**                | **RAT COIN**                                                                 | **Bitcoin (Real Cryptocurrency)**                                                                                       |
+|---------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| **Consensus Mechanism**   | Proof-of-Capacity (PoC): Simulated by checking hashes in plot files.        | Proof-of-Work (PoW): Requires solving computationally expensive mathematical puzzles.                                  |
+| **Mining Difficulty**     | Simulated by checking if a hash ends with "00".                            | Dynamically adjusted to maintain a 10-minute block creation time.                                                      |
+| **Mining Reward**         | Fixed at 50 coins per block.                                               | Bitcoin reward halves approximately every 4 years (halving).                                                           |
+| **Blockchain Validation** | Checks hash consistency and previous_hash matches.                         | Ensures decentralization and trust using public-private cryptography and a distributed consensus mechanism.            |
+| **Block Data**            | Stores transactions, index, nonce, timestamp, and previous_hash.           | Includes Merkle Trees to efficiently validate transactions.                                                            |
+| **Transactions**          | Simple: Sender, recipient, and amount.                                     | Includes signatures, multi-input/output transactions, and transaction fees.                                            |
+| **Network Type**          | Centralized: Single server (Flask application).                            | Decentralized: Peer-to-peer network with thousands of nodes globally.                                                  |
+| **Blockchain Storage**    | Stored entirely in memory within a Python list (self.chain).               | Distributed ledger stored on all Bitcoin nodes (full and lightweight nodes).                                           |
+| **Node Communication**    | No peer-to-peer communication; single-node implementation.                 | Full peer-to-peer protocol for broadcasting and verifying transactions/blocks.                                         |
+| **Mining Process**        | Simulated by reading from plot files (proof_of_capacity).                  | Solving cryptographic puzzles using hash power.                                                                        |
+| **Currency Supply**       | No defined total supply (only rewards miners).                             | Capped at 21 million coins.                                                                                            |
+| **Security**              | Basic hash verification with no cryptographic signatures.                  | Uses public-key cryptography for secure and verifiable transactions.                                                   |
+| **Smart Contracts**       | No smart contract capabilities.                                            | Limited scripting capability via Bitcoin Script (e.g., multi-signature wallets).                                       |
+| **Transaction Fees**      | None.                                                                      | Paid to miners for prioritization in the network.                                                                      |
+| **Genesis Block**         | Created with static attributes ("Genesis Block").                          | Contains a hardcoded reference to a 2009 newspaper headline.                                                           |
+| **APIs/Endpoints**        | Simple Flask API for adding transactions, mining, and viewing the blockchain. | Bitcoin operates via wallets and nodes using a protocol defined by Bitcoin Core.                                       |
+| **Currency Name**         | RAT Cryptocurrency.                                                        | Bitcoin (BTC).                                                                                                         |
+| **Code Optimization**     | Suitable for learning and personal projects but not efficient for production (Python). | Highly optimized for performance and scalability (C++).                                                               |
+| **Scalability**           | Limited to a single-node environment; performance degrades as chain grows. | Scalable via Lightning Network and SegWit for faster transaction processing.                                           |
+| **Anonymity**             | No anonymization; all transaction details are visible.                     | Pseudonymous: Transactions are tied to public keys, not real identities.                                               |
+| **Cryptography**          | Basic SHA-256 hashing only.                                                | Combines SHA-256 with RIPEMD-160 and elliptic-curve cryptography (ECDSA).                                              |
+| **Distributed Ledger**    | Not distributed; resides on one machine.                                   | Fully distributed across all nodes in the network.                                                                     |
+| **Real-World Usage**      | Educational or experimental project.                                       | Used globally as a medium of exchange, store of value, and investment asset.                                           |
 
+---
 # Conclusion
 
 This project aims to create a decentralized and inclusive financial ecosystem by combining blockchain security with user-friendly design. It seeks to promote blockchain adoption and enhance financial inclusion globally through responsible practices and ongoing innovation.
