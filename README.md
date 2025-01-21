@@ -153,6 +153,8 @@ The project introduces user challenges for blockchain mining, making it more int
 |                           | **Security Threats**      | Robust measures must be maintained to protect user assets and data.                        |
 
 ---
+# RAT COIN  VS  BIT COIN
+
 | **Aspect**                | **RAT COIN**                                                                 | **Bitcoin (Real Cryptocurrency)**                                                                                       |
 |---------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | **Consensus Mechanism**   | Proof-of-Capacity (PoC): Simulated by checking hashes in plot files.        | Proof-of-Work (PoW): Requires solving computationally expensive mathematical puzzles.                                  |
